@@ -1,1 +1,12 @@
-<app-empleados></app-empleados>
+<!-- <app-empleados></app-empleados> -->
+<!-- <app-jefes></app-jefes> -->
+
+<nav class="menu">
+  <a [routerLink]="'/home'" routerLinkActive="active">Home</a>
+  <a routerLink="/contacto" routerLinkActive="active">Conatacto</a>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Ayuda</a>
+</nav>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

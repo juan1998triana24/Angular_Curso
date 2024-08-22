@@ -1,0 +1,10 @@
+<p> {{titulo}} </p>
+
+<input #miInput type="text" placeholder="Ingresar Empleado" (keyup.enter)="Ingresar_Empleado(miInput)">
+
+<!-- Botón para obtener el valor del input -->
+<button (click)="Ingresar_Empleado(miInput)">Obtener Valor</button>
+
+<ul>
+    <li *ngFor="let empleado of nombre_empleados">{{empleado}}</li>
+</ul>

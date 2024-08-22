@@ -1,0 +1,8 @@
+<p>{{titulo_contacto}}</p>
+
+
+
+<p *ngIf="parametro">Bienvenidao  : {{parametro}}</p>
+
+<button *ngIf="!parametro" class="glowing-button" (click)="redirigir_parametro_contacto()">Ir a la pagina con parametro</button>
+<button class="glowing-button" (click)="redirigir_parametro_home()">Ir al inicio </button>

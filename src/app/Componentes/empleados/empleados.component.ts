@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Empleado } from '../../Interfaces/Empleado';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-empleados',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './empleados.component.html',
-  styleUrl: './empleados.component.scss'
+  styleUrls: ['./empleados.component.scss']
 })
 export class EmpleadosComponent {
 
